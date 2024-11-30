@@ -1,0 +1,129 @@
+header{
+    height: 100vh;
+    padding-top: 7rem;
+    overflow: hidden;
+}
+
+.header_container{
+    text-align: center;
+    height: 100%;
+    position: relative;
+}
+.typewriter-container {
+    font-family: 'Poppins', sans-serif; /* Add your preferred font */
+    font-size: 2rem; /* Adjust text size */
+    font-weight: bold; /* Makes it bold */
+    color: #CBADD9; /* Your desired color */
+    text-align: center; /* Centers the text horizontally */
+    margin-top: 20px; /* Adds some spacing */
+    line-height: 1.5; /* Adjusts line spacing */
+  }
+  
+/* =============================== CTA =============================== */
+.cta{
+    margin-top: 2.5rem;
+    display: flex;
+    gap: 1.2rem;
+    justify-content: center;
+}
+
+/* ========================= HEADER SOCIALS ======================= */
+.header_socials{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+    position: absolute;
+    left: 0;
+    bottom: 3rem;
+}
+.header_socials::after{
+    content: '';
+    width: 1px;
+    height: 2rem;
+    background: var(--color-primary);
+}
+
+/* ========================= ME ======================= */
+.me {
+    position: absolute;
+    left: calc(50% - 11rem);
+    margin-top: 2.5rem;
+    width: 25rem;
+    height: 30rem;
+    background: linear-gradient(135deg, #8e44ad, #3498db, #1abc9c);
+    border-radius: 40% 60% 70% 30% / 30% 40% 60% 70%; /* Abstract organic shape */
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2);
+    z-index: -1;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /* Zoom-out effect for the image */
+  .me img {
+    width: 90%; /* Adjust the size as needed */
+    height: auto;
+    transform: scale(0.85); /* Zoom out */
+    transition: transform 0.3s ease; /* Smooth zoom effect */
+  }
+  
+  .me img:hover {
+    transform: scale(1); /* Slight hover effect to zoom back in */
+  }
+  
+  /* Adding a Secondary Layer */
+  .me:before {
+    content: '';
+    position: absolute;
+    width: 120%;
+    height: 120%;
+    background: radial-gradient(circle, rgba(255, 255, 255, 0.2), transparent);
+    border-radius: 50%;
+    top: -10%;
+    left: -10%;
+    z-index: -2;
+    animation: glowEffect 6s ease-in-out infinite;
+  }
+  
+  /* Glow Effect Animation */
+  @keyframes glowEffect {
+    0%, 100% {
+      transform: scale(1);
+      opacity: 0.8;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 1;
+    }
+  }
+  
+  
+
+/* ========================= SCROLL DOWN ======================= */
+.scroll_down{
+    position: absolute;
+    right: -2.3rem;
+    bottom: 5rem;
+    transform: rotate(90deg);
+    font-weight: 300;
+    font-size: 0.9rem;
+}
+
+/* ============================= MEDIA QUERIES(MEDIUM DEVICES) ================================= */
+@media screen and (max-width: 1024px){
+    header{
+        height: 100vh;
+    }
+}
+
+/* ============================= MEDIA QUERIES(SMALL DEVICES) ================================= */
+@media screen and (max-width: 600px){
+    header{
+        height: 100vh;
+    }
+    .header_socials,.scroll_down{
+        display: none;
+    }
+}
