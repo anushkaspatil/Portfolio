@@ -74,7 +74,7 @@ portfolio/
 ├── .gitignore              # Git ignored files and folders
 ├── README.md               # Project documentation
 └── LICENSE                 # Project license file
-
+```
 
 ## 📧 Contact
 
