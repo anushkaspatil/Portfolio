@@ -76,6 +76,12 @@ portfolio/
 └── LICENSE                 # Project license file
 ```
 
+## 📚 Resources
+
+- [React Official Documentation](https://react.dev/)
+- [Reference Video](https://www.youtube.com/watch?v=G-Cr00UYokU&t=11136s)
+- [Beloved friend](https://chat.openai.com/)
+
 ## 📧 Contact
 
 Feel free to reach out to me through the portfolio’s contact form or via email: [anushkadspatil@gmail.com](mailto:anushkadspatil@gmail.com).
