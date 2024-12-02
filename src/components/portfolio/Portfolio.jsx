@@ -19,7 +19,7 @@ const data = [
     id: 2,
     image: IMG2,
     title: 'VibeSync - Speech Emotion Recognition',
-    github: "https://github.com/anushkaspatil/instagram_reach_forecasting",
+    github: "https://github.com/anushkaspatil/Vibe-Sync",
     demo: ""
   },
   {
