@@ -15,7 +15,7 @@ const Header = () => {
               <div>
                 I'm a
                 <Typewriter className = "typewriter-container"
-                  words={[" Full Stack Developer", " Programmer", " ML Practioner", " GenAI enthusiast"]}
+                  words={[" Software Developer", " Programmer", " ML Practioner", " GenAI enthusiast"]}
                   loop={0}
                   cursor
                   cursorStyle="|"
